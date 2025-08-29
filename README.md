@@ -24,9 +24,7 @@ Built with **HTML/CSS/JS** — no build step.
 ---
 
 ## Preview
-_Add screenshots after you push:_
-```md
-![Hero](preview/hero.png)
+
 ![Menu](preview/menu.png)
 
 
@@ -54,7 +52,7 @@ script/darkmode.js
 images/
 
 ## Getting Started
-Open `SidebarCoffee.html` in your browser.
+Open `index.html` in your browser.
 (Optional) `python -m http.server 8080` or `npx serve .`
 
 ## Dark Mode
@@ -83,3 +81,4 @@ Footer includes: “Images courtesy of photographers on Pexels. Used under the P
 ## License
 Code: MIT © Ovi  
 Images: Pexels License
+
