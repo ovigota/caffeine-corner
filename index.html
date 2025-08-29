@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ovi's Caffeine Corner — Specialty Coffee</title>
+<meta name="description" content="Caffeine Corner — artisan coffee, fresh pastries, and a cozy place to unwind.">
+<meta name="color-scheme" content="light dark">
+<script>
+  // Pre-paint theme: apply to avoid flash
+  (() => {
+    const STORAGE_KEY = 'theme';                 // 'dark' | 'light' | null (system)
+    const saved = localStorage.getItem(STORAGE_KEY);
+    const prefersDark = window.matchMedia &&
+                        window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const wantDark = saved ? saved === 'dark' : prefersDark;
+    if (wantDark) document.documentElement.classList.add('darkmode');
+  })();
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const y = document.getElementById('y');
+    if (y) y.textContent = new Date().getFullYear();
+  });
+</script>
+<script type="text/javascript" src="script/darkmode.js" defer></script>
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="sidebar_coffee_styles.css" />
+<link rel="license" href="https://www.pexels.com/license/">
+
+</head>
+<body>
+    
+    <main id="main">
+        <!-- Side Header -->
+        <div id="side-header">
+    
+            <div class="top">
+    
+                <!-- Logo -->
+                <div id="logo">
+                    <a href="/" class="brand" aria-label="Caffeine Corner - home">
+                        <span class="image-avatar48"><img src="images/avatar_pexels-ferdous-banamah-84328066-8873741.jpg"
+                                alt="img" /></span>
+                        <p id="title" class="brand__name">Ovi's</p>
+                        <p class="brand__tagline">Caffeine Corner</p>
+                    </a>
+                </div>
+    
+                <!-- Nav -->
+                <nav id="nav">
+                    <ul class="icons">
+                        <li><a href="#" id="top-link"><i class="fa-solid fa-heart"></i><span>Home</span></a></li>
+
+                        <li><a href="#about" id="about-link"><i class="fa-solid fa-user"></i><span >About</span></a>
+                        </li>
+
+                        <li><a href="#testimonials" id="about-link"><i class="fa-solid fa-star"></i><span>Reviews</span></a></li>
+
+                        <li><a href="mailto:hello@caffeinecorner.ro" id="contact-link"><i class="fa-solid fa-address-book"></i><span>Contact</span></a>
+                        </li>
+                    </ul>
+                    <div class="theme">
+                        <button id="theme-switch" aria-pressed="false" aria-label="Toggle dark mode">
+                            <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                            <i class="fa-solid fa-sun" aria-hidden="true"></i>
+                        </button>
+
+                    </div>
+                </nav>
+    
+            </div>
+    
+            <div class="bottom">
+    
+                <!-- Social Icons -->
+                <div class="icons">
+                    <a href="#"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i><span class="sr-only">Twitter</span></a>
+                    <a href="#"><i class="fa-brands fa-facebook" aria-hidden="true"></i><span class="sr-only">Facebook</span></a>
+                    <a href="#"><i class="fa-solid fa-code-fork"  aria-hidden="true"></i><span class="sr-only">GitHub</span></a>
+                    <a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i><span class="sr-only">Instagram</span></a>
+                    <a href="#"><i class="fa-solid fa-envelope" aria-hidden="true"><span class="sr-only">Email</span></i></a>
+                    
+                </div>
+    
+            </div>
+    
+        </div>
+        <!-- Content  -->
+        <div class="content-wrapper">
+            <!-- === hero === -->
+            <section class="hero-container">
+                <h1>Handcrafted coffee</h1>
+                <h3>made with heart</h3>
+                <p>From bold espresso to silky lattes and flaky pastries — your perfect ritual awaits.</p>
+                <div class="container section hero-actions">
+                    <a class="btn" href="#menu">Explore the menu</a>
+                    <a class="link" href="#about">Visit us</a>
+                </div>
+            </section>
+    
+            <!-- === menu === -->
+            <section class=" section menu container">
+                <h2 class="section-title">Customer favorites</h2>
+                <div class="card-grid">
+        <article class="card menu-card">
+          <img class="card__media" src="images/espresso.jpg" alt="Espresso shot" loading="lazy" width="600" height="400">
+          <div class="card__body">
+            <h3 class="card__title">Double Espresso</h3>
+            <p class="card__text">Rich and intense — the pure essence of coffee.</p>
+            <span class="price">€2.80</span>
+          </div>
+        </article>
+
+        <article class="card menu-card">
+          <img class="card__media" src="images/latte.jpg" alt="Latte with latte art" loading="lazy" width="600" height="400">
+          <div class="card__body">
+            <h3 class="card__title">Vanilla Latte</h3>
+            <p class="card__text">Velvety milk and a touch of vanilla sweetness.</p>
+            <span class="price">€3.90</span>
+          </div>
+        </article>
+
+        <article class="card menu-card">
+          <img class="card__media" src="images/croissant.jpg" alt="Buttery croissant" loading="lazy" width="600" height="400">
+          <div class="card__body">
+            <h3 class="card__title">Butter Croissant</h3>
+            <p class="card__text">Flaky layers, baked fresh every morning.</p>
+            <span class="price">€2.20</span>
+          </div>
+        </article>
+      </div>
+            </section>
+    
+            <!-- === about === -->
+            <section id="about" class="section about container">
+                <div class="about__media">
+                    <img src="images/shop_pexels-apgpotr-702251.jpg" alt="Cozy interior of the coffee shop" loading="lazy" width="600" height="400">
+                </div>
+                <div class="about__text">
+                    <h2 class="section-title">Our story</h2>
+                    <p>We’re a small team of coffee lovers dedicated to sourcing ethically, roasting thoughtfully, and serving with
+                        a smile. Whether you’re on the go or staying a while, we want every cup to feel like home.</p>
+                    <ul class="about__list">
+                        <li><i class="fa-solid fa-leaf" aria-hidden="true"></i> Ethically sourced beans</li>
+                        <li><i class="fa-solid fa-seedling" aria-hidden="true"></i> Seasonal single-origin specials</li>
+                        <li><i class="fa-solid fa-heart" aria-hidden="true"></i> Community-first hospitality</li>
+                    </ul>
+                </div>
+            </section>
+    
+            <!-- === testimonials === -->
+            <section id="testimonials" class="section container">
+                <h2 class="section-title">What people say</h2>
+                <div class="card-grid">
+                    <figure class="card testimonial">
+                        <figcaption class="testimonial__header">
+                            <span class="avatar">
+                                <img src="images/reviewer-1.jpg" alt="Reviewer Ana">
+                            </span>
+                            <div>
+                                <strong>Ana</strong>
+                                <small>Brew lover</small>
+                            </div>
+                        </figcaption>
+                        <blockquote class="testimonial__quote">“Best cappuccino in town — creamy microfoam and rich flavor.”
+                        </blockquote>
+                    </figure>
+            
+                    <figure class="card testimonial">
+                        <figcaption class="testimonial__header">
+                            <span class="avatar">
+                                <img src="images/reviewer-2.jpg" alt="Reviewer Mihai">
+                            </span>
+                            <div>
+                                <strong>Mihai</strong>
+                                <small>Daily regular</small>
+                            </div>
+                        </figcaption>
+                        <blockquote class="testimonial__quote">“Warm staff, cozy vibe, and the croissants are unreal.”</blockquote>
+                    </figure>
+            
+                    <figure class="card testimonial">
+                        <figcaption class="testimonial__header">
+                            <span class="avatar">
+                                <img src="images/reviewer-3.jpg" alt="Reviewer Ioana">
+                            </span>
+                            <div>
+                                <strong>Ioana</strong>
+                                <small>Remote worker</small>
+                            </div>
+                        </figcaption>
+                        <blockquote class="testimonial__quote">“Perfect spot to work — great Wi-Fi, better coffee.”</blockquote>
+                    </figure>
+                </div>
+            </section>
+    
+            <!-- === orders - cta === -->
+            <section id="order" class="cta">
+                    <div class="container cta__inner">
+                        <h2>Ready for your next favorite cup?</h2>
+                        <a class="btn" href="#menu">Order ahead</a>
+                    </div>
+            </section>
+
+            <!-- ==== footer ==== -->
+
+            <footer id="contact" class="site-footer">
+                <div class="container footer__grid">
+                    <div>
+                        <h3 class="footer__title">Visit us</h3>
+                        <p>Strada Cafelei 7, Timișoara<br>Mon–Fri 07:30–19:00 · Sat–Sun 08:30–18:00</p>
+                    </div>
+                    <div>
+                        <h3 class="footer__title">Contact</h3>
+                        <p><a href="tel:+40-712-345-678">+40 712 345 678</a><br><a
+                                href="mailto:hello@caffeinecorner.ro">hello@caffeinecorner.ro</a></p>
+                    </div>
+                    <div>
+                        <h3 class="footer__title">Follow</h3>
+                        <p class="socials">
+                            <a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i><span class="sr-only">Instagram</span></a>
+                            <a href="#"><i class="fa-brands fa-facebook" aria-hidden="true"></i><span class="sr-only">Facebook</span></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i><span class="sr-only">Twitter</span></a>
+                        </p>
+                    </div>
+                </div>
+                <p class="footer__bottom">© <span id="y"></span> Caffeine Corner by <a href="mailto:ovigota@gmail.com" id="contact-link"><span class="sarthius">
+                        <img src="images/logoSarthius.png" alt="Sarthius">
+                    </span></a></p>
+             <p class="footer__credits">
+    Images courtesy of photographers on
+    <a href="https://www.pexels.com" target="_blank" rel="noopener">Pexels</a>.
+    Used under the
+    <a href="https://www.pexels.com/license/" target="_blank" rel="noopener">Pexels License</a>.
+    No endorsement implied.
+  </p>
+            </footer>
+
+        </div>
+    
+    
+</main>
+
+</body>
