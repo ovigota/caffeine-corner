@@ -52,7 +52,8 @@ script/darkmode.js
 images/
 
 ## Getting Started
-Open `index.html` in your browser.
+[https://ovigota.github.io/caffeine-corner/](https://ovigota.github.io/caffeine-corner/)
+
 (Optional) `python -m http.server 8080` or `npx serve .`
 
 ## Dark Mode
@@ -81,5 +82,6 @@ Footer includes: “Images courtesy of photographers on Pexels. Used under the P
 ## License
 Code: MIT © Ovi  
 Images: Pexels License
+
 
 
