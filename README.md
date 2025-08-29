@@ -25,7 +25,7 @@ Built with **HTML/CSS/JS** — no build step.
 
 ## Preview
 
-![Menu](preview/menu.png)
+![Menu](images/preview.jpg)
 
 
 ## Features
@@ -82,6 +82,7 @@ Footer includes: “Images courtesy of photographers on Pexels. Used under the P
 ## License
 Code: MIT © Ovi  
 Images: Pexels License
+
 
 
 
