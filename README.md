@@ -46,7 +46,7 @@ Perf: lazy images, font preconnect, minimal JS
 
 ## Structure
 
-SidebarCoffee.html
+index.html
 sidebar_coffee_styles.css
 script/darkmode.js
 images/
@@ -81,4 +81,5 @@ Footer includes: “Images courtesy of photographers on Pexels. Used under the P
 ## License
 Code: MIT © Ovi  
 Images: Pexels License
+
 
